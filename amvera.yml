@@ -5,14 +5,14 @@ meta:
     version: 17
 build:
   artifacts:
-    '/*.jar': /
+    'target/*.jar': /
   args:
 run:
   jarName: '"/*.jar"'
   persistence_mount: /data
   container_port: 80
-  environment:
-    - SPRING_DATASOURCE_URL=jdbc:h2:file:./db/naumen
-    - SPRING_DATASOURCE_USERNAME=naumen
-    - SPRING_DATASOURCE_PASSWORD=password
-    - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+#  environment:
+#    - SPRING_DATASOURCE_URL=jdbc:h2:file:./db/naumen
+#    - SPRING_DATASOURCE_USERNAME=naumen
+#    - SPRING_DATASOURCE_PASSWORD=password
+#    - SPRING_JPA_HIBERNATE_DDL_AUTO=update
