@@ -11,6 +11,7 @@ run:
   jarName: '"/*.jar"'
   persistence_mount: /data
   container_port: 80
+
 #  environment:
 #    - SPRING_DATASOURCE_URL=jdbc:h2:file:./db/naumen
 #    - SPRING_DATASOURCE_USERNAME=naumen
