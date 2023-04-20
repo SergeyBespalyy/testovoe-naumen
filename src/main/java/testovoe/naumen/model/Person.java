@@ -3,6 +3,10 @@ package testovoe.naumen.model;
 import jakarta.persistence.*;
 import java.util.Objects;
 
+/**
+ * Основная модель сервиса, для сохранения в основную таблицу
+ * */
+
 @Entity
 @Table(name = "person")
 public class Person {

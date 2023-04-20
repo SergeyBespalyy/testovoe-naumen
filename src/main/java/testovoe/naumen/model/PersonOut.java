@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 
 import java.util.Objects;
 
+/**
+ * Дополнительная модель сервиса, для сохранения статистики оп именам, которых нет в файле в дополнительную таблицу
+ * */
 @Entity
 @Table(name = "personOut")
 public class PersonOut {

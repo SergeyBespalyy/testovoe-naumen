@@ -1,7 +1,7 @@
 package testovoe.naumen.model;
 
 /**
- * Модель для парсинга АПИ сервиса
+ * Модель для парсинга объекта из АПИ сервиса
  * */
 public class ApiModel {
     private int age;

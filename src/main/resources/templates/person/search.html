@@ -14,12 +14,12 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h5>Страница поиска имени из файла.</h5>
+                <h2>Страница поиска имени из файла.</h2>
             </div>
         </div>
         <div class="container mt-5">
             <form th:action="@{/person/search}">
-                <input style="color:red" type="text" th:name="sh" th:if="${exception != null}" th:placeholder="${exception + '!'} "/>
+                <input type="text" th:name="sh" th:if="${exception != null}" th:placeholder="${exception + '!'} "/>
                 <input type="text" th:name="sh" th:if="${exception == null}" placeholder="Введите имя"/>
                 <input style="background-color: #FF6720; color: white;" type="submit" value="Поиск!" class="btn btn-success"/>
             </form>

@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/**
+ * Класс для загрузки данных из файла по адресу 'src/main/resources/files/listName'
+ * */
+
 @Slf4j
 @Component
 public class FileRepository {
@@ -24,7 +28,7 @@ public class FileRepository {
                 personList.add(new Person(lineSplit[0], Integer.parseInt(lineSplit[1])));
             }
         } catch (NumberFormatException  e) {
-            log.warn("Ошибка в данных файла, возможно в поле возвраст не число");
+            log.warn("Ошибка в данных файла, возможно в поле 'возвраст' не число");
             throw new RuntimeException(e);
         }catch (IOException e) {
             log.warn("Файл по указанному пути не найден");
