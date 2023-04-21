@@ -15,7 +15,7 @@ public class Person {
     @Column(name = "person_id")
     private Integer personId;
 
-    @Column(name = "person_name")
+    @Column(name = "person_name", columnDefinition = "VARCHAR(255) CHARACTER SET utf8")
     private String personName;
 
     @Column(name = "age")

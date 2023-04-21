@@ -14,6 +14,5 @@ public interface PersonService {
 
     ArrayList<Person> findCountUp();
 
-
     ArrayList<PersonOut> findCountOut();
 }
