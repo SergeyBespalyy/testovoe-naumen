@@ -27,8 +27,10 @@ public class PersonServiceImpl implements  PersonService{
     @PostConstruct
     private void init() {
         ArrayList<Person> listPerson = fileService.loadFile();
-        personRepository.deleteAll();
-        personRepository.saveAll(listPerson);
+        for (Person person : listPerson) {
+            if (personRepository.findByPersonName(person.getPersonName()) == null)
+                personRepository.save(person);
+        }
     }
 
     public Person searchPerson(String name) {
@@ -51,7 +53,7 @@ public class PersonServiceImpl implements  PersonService{
     }
 
     public Person findAgeUp() {
-        return personRepository.findOldPerson();
+        return personRepository.findOldPerson().get(0);
     }
 
     public ArrayList<Person> findCountUp() {
