@@ -27,10 +27,8 @@ public class PersonServiceImpl implements  PersonService{
     @PostConstruct
     private void init() {
         ArrayList<Person> listPerson = fileService.loadFile();
-        for (Person person : listPerson) {
-            if (personRepository.findByPersonName(person.getPersonName()) == null)
-                personRepository.save(person);
-        }
+        personRepository.deleteAll();
+        personRepository.saveAll(listPerson);
     }
 
     public Person searchPerson(String name) {
