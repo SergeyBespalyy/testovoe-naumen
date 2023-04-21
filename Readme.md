@@ -38,3 +38,9 @@
 - "/statistic/age - получение статистики по самому большому возрасту имени из файла
 - "/statistic/count - получение статистики по количеству запросов имен,
 
+![image](https://user-images.githubusercontent.com/115038161/233626835-f86f455a-8ea9-4224-872b-5b4639c46b10.png)
+![image](https://user-images.githubusercontent.com/115038161/233628142-95590b22-479f-4707-9366-65f92f062a64.png)
+![image](https://user-images.githubusercontent.com/115038161/233628242-2358a020-043e-4c84-800f-0a0edb314118.png)
+![image](https://user-images.githubusercontent.com/115038161/233628302-f2dc2623-3d0f-4d89-b002-4f33e408b176.png)
+
+
